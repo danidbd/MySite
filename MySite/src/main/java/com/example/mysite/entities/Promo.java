@@ -1,11 +1,12 @@
-package entities;
+package com.example.mysite.entities;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Promo {
-
+public class Promo implements Serializable {
+    @Autowired
     private long id;
     private String title;
     private String url;
