@@ -1,12 +1,18 @@
 package com.example.mysite.entities;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+
+import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "promo")
 public class Promo implements Serializable {
-    @Autowired
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String title;
     private String url;
