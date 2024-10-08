@@ -17,13 +17,17 @@ public class Promo implements Serializable {
     private String title;
     private String url;
 
-    public Promo() {
+    public Promo(Long o, String celular, String url) {
     }
 
     public Promo(long id, String title, String url) {
         this.id = id;
         this.title = title;
         this.url = url;
+    }
+
+    public Promo() {
+        
     }
 
     public long getId() {
