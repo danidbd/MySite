@@ -27,7 +27,7 @@ public class Promo implements Serializable {
     }
 
     public Promo() {
-        
+
     }
 
     public long getId() {
